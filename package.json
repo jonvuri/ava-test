@@ -1,0 +1,46 @@
+{
+  "name": "ava-test",
+  "version": "0.1.0",
+  "description": "Ava test",
+  "scripts": {
+    "test": "BABEL_DISABLE_CACHE=1 NODE_ENV=test ava"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-css-modules": "^3.7.6",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "ava-spec": "^1.0.1",
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "babel-root-slash-import": "^1.0.0",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.5.0",
+    "dirty-chai": "^1.2.2",
+    "enzyme": "^2.3.0",
+    "ignore-styles": "^4.0.0",
+    "jsdom": "^9.2.0"
+  },
+  "ava": {
+    "files": [
+      "src/**/*.spec.{js,jsx}"
+    ],
+    "source": [
+      "src/**/*.{js,jsx}",
+      "!src/**/*.spec.{js,jsx}"
+    ],
+    "require": [
+      "babel-register",
+      "ignore-styles",
+      "./ava.setup.js"
+    ],
+    "babel": "inherit"
+  }
+}
