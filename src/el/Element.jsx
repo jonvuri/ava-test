@@ -7,5 +7,4 @@ const Element = () => (
   <div styleName='elem' id='el'>Foo</div>
 )
 
-export { Element }
 export default cssModules(Element, styles)

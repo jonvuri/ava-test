@@ -1,8 +1,9 @@
+import cssHook from 'css-modules-require-hook/preset'
+
 import chai, { expect } from 'chai'
 import dirtyChai from 'dirty-chai'
 import chaiEnzyme from 'chai-enzyme'
 import jsdom from 'jsdom'
-
 
 // Modify chai with functional, lint-friendly assertions
 chai.use(dirtyChai)
